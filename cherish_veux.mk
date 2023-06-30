@@ -12,15 +12,17 @@ TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
 
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
 
-# Inherit some common PixelOS
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common CherishOS
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_veux
+PRODUCT_NAME := cherish_veux
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
