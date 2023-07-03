@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_veux.mk
+    $(LOCAL_DIR)/awaken_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_veux-user \
-    cherish_veux-userdebug \
-    cherish_veux-eng
+    awaken_veux-user \
+    awaken_veux-userdebug \
+    awaken_veux-eng
